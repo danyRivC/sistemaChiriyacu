@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\Post;
 Route::get('/', function () {
 
     $titulo = "Centro Comercial Chiriyacu";
