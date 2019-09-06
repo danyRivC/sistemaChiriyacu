@@ -8,7 +8,7 @@
 
     <div class='container'>
         <div class='col-md-3 header-left'>
-            <h1><a href='index.php'><img src='images/logo3.jpg'></a></h1>
+            <h1><a href="{{route('home')}}"><img src='images/logo3.jpg'/></a></h1>
         </div>
 
         <div class='col-md-6 header-middle'>
@@ -17,12 +17,7 @@
                     <input type='search' value='Buscar' onfocus='this.value = '';' onblur='if (this.value == '') {this.value = 'Search';}' required>
                 </div>
                 <div class='section_room'>
-                    <select id='country' onchange='change_country(this.value)' class='frm-field required'>
-                        <option value='null'>Todas las Categorias</option>
-                        <option value='AX'>Ropa para Hombre</option>
-                        <option value='AX'>Ropa para Mujeres</option>
-                        <option value='AX'>Servicios</option>
-                    </select>
+
                 </div>
                 <div class='sear-sub'>
                     <input type='submit' value=' '>
@@ -32,11 +27,10 @@
         </div>
         <div class='col-md-3 header-right footer-bottom'>
             <ul>
-                <li><a href='#' class='use1' data-toggle='modal' data-target='#myModal4'><span>Acceder</span></a>
 
+                    <li><a href="{{ route('login') }}" class='use1' ><span>{{ __('Login') }}</span></a>
                 </li>
                 <li><a class='fb' href='https://www.facebook.com/pages/category/Shopping-Mall/Centro-Comercial-Chiriyacu-758169454533172/'></a></li>
-
                 <li><a class='you' href='https://www.youtube.com/watch?v=QswzZfGfb3s'></a></li>
                 <li><a class='insta' href='https://www.instagram.com/chiriyacucc/?hl=es-la'></a></li>
             </ul>
@@ -61,61 +55,17 @@
                         </button>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class='collapse navbar-collapse menu--shylock' id='bs-example-navbar-collapse-1'>
+                    <div class='collapse navbar-collapse menu--shylock align-content-center' id='bs-example-navbar-collapse-1'>
                         <ul class='nav navbar-nav menu__list'>
-                            <li class='active menu__item menu__item--current'><a class='menu__link' href='index.php'>INICIO <span class='sr-only'>(current)</span></a></li>
-                            <li class='dropdown menu__item'>
-                                <a href='#' class='dropdown-toggle menu__link' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Ropa para Hombre <span class='caret'></span></a>
-                                <ul class='dropdown-menu multi-column columns-3'>
-                                    <div class='row'>
-                                        <div class='col-sm-6 multi-gd-img1 multi-gd-text '>
-                                            <a href='mens.html'><img src='images/woo1.jpg' alt=' '/></a>
-                                        </div>
-                                        <div class='col-sm-3 multi-gd-img'>
-                                            <ul class='multi-column-dropdown'>
-                                                <li><a href='mens.html'>Ternos</a></li>
-                                                <li><a href='mens.html'>Camisas</a></li>
-                                                <li><a href='mens.html'>Zapatos</a></li>
-                                                <li><a href='mens.html'>Relojes</a></li>
-                                                <li><a href='mens.html'>Accesorios</a></li>
-
-                                            </ul>
-                                        </div>
-                                        <div class='col-sm-3 multi-gd-img'>
-
-                                        </div>
-                                        <div class='clearfix'></div>
-                                    </div>
-                                </ul>
+                            <li class='active menu__item menu__item--current'><a class='menu__link' href='{{route('home')}}'>INICIO </a></li>
+                            <li class='menu__item'>
+                                <a href="" class=' menu__link'  role='button' aria-haspopup='true' aria-expanded='false'>Productos</a>
                             </li>
-                            <li class='dropdown menu__item'>
-                                <a href='#' class='dropdown-toggle menu__link' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Ropa para Mujer <span class='caret'></span></a>
-                                <ul class='dropdown-menu multi-column columns-3'>
-                                    <div class='row'>
-                                        <div class='col-sm-3 multi-gd-img'>
-                                            <ul class='multi-column-dropdown'>
-                                                <li><a href='womens.html'>Ternos</a></li>
-                                                <li><a href='womens.html'>Camisas</a></li>
-                                                <li><a href='womens.html'>Zapatos</a></li>
-                                                <li><a href='womens.html'>Relojes</a></li>
-                                                <li><a href='womens.html'>Accesorios</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <div class='col-sm-6 multi-gd-img multi-gd-text '>
-                                            <a href='womens.html'><img src='images/woo.jpg' alt=' '/></a>
-                                        </div>
-                                        <div class='clearfix'></div>
-                                    </div>
-                                </ul>
+                            <li class='menu__item'>
+                                <a href="" class='menu__link'  role='button' aria-haspopup='true' aria-expanded='false'>Blog </a>
                             </li>
-
-
-
-                            <li class=' menu__item'><a class='menu__link' href='contact.php'>Contactanos</a></li>
-                            <li class=' menu__item'><a class='menu__link' href='electronics.html'>SERVICIOS</a></li>
-
-
+                            <li class=' menu__item'><a class='menu__link' href="">Contactanos</a></li>
+                            <li class=' menu__item'><a class='menu__link' href="">Eventos</a></li>
                         </ul>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends \TCG\Voyager\Models\User
 {
     use Notifiable;
 
@@ -37,13 +37,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function comment(){
-        return $this -> hasMany('app/Comment', 'comment_id');
-    }
 
-    public function aliquot(){
-        return $this ->hasMany('app/Aliquot','aliquot_id');
-    }
 
 
 

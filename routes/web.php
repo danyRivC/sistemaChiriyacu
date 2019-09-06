@@ -17,4 +17,15 @@ Route::get('/', function () {
     return view('home')
         ->with('titulo', $titulo);
 });
-Route::get('/products', 'ProductController@index');
+
+
+Auth::routes();
+
+Route::get('/blog', 'BlogController@index')->name('blog');
+Route::get('/blog/{slug}', 'BlogController@show')->name('blog_detail');
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
