@@ -1,6 +1,6 @@
 @extends('layouts.base')
 @section('content')
-    <header class="col-lg-12" style="background-image: url('./{!! $post->image !!}')"><h1>{{$post->title}}</h1></header>
+    <header class="col-lg-12 jumbotron text-center " style="background-image: url('{{asset('storage/'.$post->image)}}'); background-repeat:no-repeat;  background-size: 100% ; padding-bottom:600px;;" ><h1>{{$post->title}}</h1></header>
     <div class=" col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
     <div class="bootstrap-tab animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
         <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">

@@ -2,7 +2,7 @@
 @section('title', 'Centro Comercial Chiriyacu')
 @section('content')
 
-            <div class="col-md-12">
+            <div class="col-md-12" style="background:#FFFFFF">
                 <!-- aqui insertaremos el slider -->
                 <div id="carousel1" class="carousel slide" data-ride="carousel">
                     <!-- Indicatodores -->
@@ -12,18 +12,16 @@
                         <li data-target="#carousel1" data-slide-to="2"></li>
                     </ol>
                     <!-- Contenedor de las imagenes -->
-                    <div class="carousel-inner" role="listbox" >
-                        
+                    <div class="carousel-inner"  role="listbox" >
                         <div class="item active" >
-                            <img  src="images/ba1.jpg" alt="Imagen 1" >
+                            <img  src="images/ba1.jpg"  style="height:650px; width:100%" alt="Imagen 1" >
+                        </div>
+                        <div class="item">
+                            <img src="images/ba2.jpg" style="height:650px; width:100%" alt="Imagen 2" >
                         </div>
 
                         <div class="item">
-                            <img src="images/ba2.jpg" alt="Imagen 2" >
-                        </div>
-
-                        <div class="item">
-                            <img src="images/ba3.jpg" alt="Imagen 3" >
+                            <img src="images/ba3.jpg" style="height:650px; width:100%" alt="Imagen 3" >
                         </div>
 
                     </div>

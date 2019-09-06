@@ -8,7 +8,7 @@
 
     <div class='container'>
         <div class='col-md-3 header-left'>
-            <h1><a href="{{route('home')}}"><img src='images/logo3.jpg'/></a></h1>
+            <h1><a href="{{route('home')}}"><img src="{{asset ('images/logo3.jpg')}}"/></a></h1>
         </div>
 
         <div class='col-md-6 header-middle'>
@@ -57,12 +57,15 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class='collapse navbar-collapse menu--shylock align-content-center' id='bs-example-navbar-collapse-1'>
                         <ul class='nav navbar-nav menu__list'>
-                            <li class='active menu__item menu__item--current'><a class='menu__link' href='{{route('home')}}'>INICIO </a></li>
+                            <li class='active menu__item menu__item--current'><a class='menu__link' href="{{route('home')}}">INICIO </a></li>
+                            <li class='menu__item'>
+                                <a href="" class=' menu__link'  role='button' aria-haspopup='true' aria-expanded='false'>Eventos</a>
+                            </li>
                             <li class='menu__item'>
                                 <a href="" class=' menu__link'  role='button' aria-haspopup='true' aria-expanded='false'>Productos</a>
                             </li>
                             <li class='menu__item'>
-                                <a href="" class='menu__link'  role='button' aria-haspopup='true' aria-expanded='false'>Blog </a>
+                                <a class='menu__link'  href="{{route('blog_index')}}">Blog </a>
                             </li>
                             <li class=' menu__item'><a class='menu__link' href="">Contactanos</a></li>
                             <li class=' menu__item'><a class='menu__link' href="">Eventos</a></li>

@@ -21,8 +21,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/blog', 'BlogController@index')->name('blog');
+Route::get('/blog', 'BlogController@index')->name('blog_index');
 Route::get('/blog/{slug}', 'BlogController@show')->name('blog_detail');
+
+Route::get('/event', 'EventController@index')->name('event');
+Route::get('/event/{slug}', 'EventController@show')->name('event_detail');
+
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin'], function () {

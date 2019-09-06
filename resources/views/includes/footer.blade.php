@@ -15,7 +15,7 @@
     <div class='footer'>
         <div class='container'>
             <div class='col-md-3 footer-left'>
-                <h2><a href='index.php'><img src='images/logo3.jpg' alt=' ' /></a></h2>
+                <h2><a href='index.php'><img src="{{asset ('images/logo3.jpg')}}"  alt=' ' /></a></h2>
                 <p>El Centro comercial chiriyacu esta ubicado
                     al sur de la ciudad de Quito, el centro
                     comercial del ahorro esta ubicado a un lado
